@@ -1,3 +1,91 @@
+libauthen-sasl-perl (2.1900-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 2.1900.
+    - Generate cnonce and nonce from system randomness (CVE-2025-40918)
+      (Closes: #1109406)
+  * Add (Build-)Depends(-Indep) on libcrypt-urandom-perl
+  * d/u/metadata: Update according to new upstream location
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 10 Aug 2025 21:49:44 +0200
+
+libauthen-sasl-perl (2.1800-1) unstable; urgency=medium
+
+  * Team upload.
+  * Update long description.
+    Don't mention Authen::SASL::Cyrus anymore, which is deprecated and not in
+    Debian any longer.
+  * Import upstream version 2.1800.
+  * debian/copyright: add info about new files.
+  * Update years of upstream copyright.
+  * Update libauthen-sasl-perl.examples (moved files).
+  * Declare compliance with Debian Policy 4.7.2.
+  * Remove Rules-Requires-Root: no.
+  * debian/rules: update fix for hashbang in example scripts.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 10 Aug 2025 03:18:24 +0200
+
+libauthen-sasl-perl (2.1700-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 2.1700.
+  * Update debian/upstream/metadata.
+  * Drop t_upstream_podsyntax.diff, applied upstream.
+  * Update years of upstream copyright.
+  * debian/copyright: remove stanza about dropped files.
+  * Declare compliance with Debian Policy 4.6.2.
+  * Set Rules-Requires-Root: no.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Update long description.
+  * Add debian/tests/pkg-perl/syntax-skip.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 24 Sep 2023 19:15:33 +0200
+
+libauthen-sasl-perl (2.1600-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libauthen-sasl-perl: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 13 Oct 2022 17:17:26 +0100
+
+libauthen-sasl-perl (2.1600-2) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Remove Franck Joncourt from Uploaders.
+    Thanks to Tobias Frost (Closes: #831285)
+
+  [ gregor herrmann ]
+  * Remove AGOSTINI Yves from Uploaders. Thanks for your work!
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Laurent Baillet ]
+  * fix lintian wrong-path-for-interpreter error
+  * fix lintian file-contains-trailing-whitespace warning
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 8 to 12.
+  * Set upstream metadata fields: Repository.
+  * Add missing dependency on libmodule-install-perl.
+  * Set upstream metadata fields: Bug-Database, Repository.
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 08 Jun 2022 17:43:36 +0100
+
 libauthen-sasl-perl (2.1600-1.1) unstable; urgency=medium
 
   * Non maintainer upload by the Reproducible Builds team.
@@ -165,7 +253,7 @@ libauthen-sasl-perl (2.08-1) unstable; urgency=high
 
 libauthen-sasl-perl (2.05-1) unstable; urgency=low
 
-  * New upstream version. 
+  * New upstream version.
 
  -- Davide Puricelli (evo) <evo@debian.org>  Thu, 23 Oct 2003 17:40:14 +0200
 
@@ -174,4 +262,3 @@ libauthen-sasl-perl (2.04-1) unstable; urgency=low
   * Initial Release, closes: #181247.
 
  -- Davide Puricelli (evo) <evo@debian.org>  Sat, 07 Jun 2003 10:29:22 +0200
-
