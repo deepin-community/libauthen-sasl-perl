@@ -1,10 +1,10 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: https://metacpan.org/release/Authen-SASL
 Upstream-Name: Authen-SASL
 Upstream-Contact: Graham Barr <gbarr@pobox.com>
 
 Files: *
-Copyright: 1998-2009, Graham Barr <gbarr@pobox.com>
+Copyright: 1998-2025, Graham Barr <gbarr@pobox.com>
  2001, Chris Ridd <chris.ridd@isode.com>
  2004-2006, Peter Marschall
  2003-2009, Djamel Boudjerda (NEXOR)
@@ -13,10 +13,10 @@ Copyright: 1998-2009, Graham Barr <gbarr@pobox.com>
  2009, Yann Kerherve
 License: Artistic or GPL-1+
 
-Files: inc/Module/*
-Copyright: 2002-2010, Adam Kennedy <adamk@cpan.org>
- 2002-2010, Audrey Tang <autrijus@autrijus.org>
- 2002-2010, Brian Ingerson <ingy@cpan.org>
+Files: lib/Authen/SASL/Perl/OAUTHBEARER.pm
+ lib/Authen/SASL/Perl/XOAUTH2.pm
+Copyright: 2025, Aditya Garg <gargaditya08@live.com>
+ 2025, Julian Swagemakers <julian@swagemakers.org>
 License: Artistic or GPL-1+
 
 Files: debian/*

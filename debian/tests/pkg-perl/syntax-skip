@@ -1,0 +1,5 @@
+# libdigest-hmac-perl in Suggests
+Authen/SASL/Perl/CRAM_MD5.pm
+Authen/SASL/Perl/DIGEST_MD5.pm
+# libgssapi-perl in Suggests
+Authen/SASL/Perl/GSSAPI.pm
